@@ -1,1 +1,21 @@
+-- Assignment --
+-- Pricing system for Data Subscription Model
 
+DB
+    track IDS in a DB table                     10 Mins = $100
+    Bill the client if a reRequestData is made  $1 per rerequst
+    
+Server
+    No Parameters URL :    locahost:8000/values/getdata  
+    Parameters is ID URL:  locahost:8000/values/reRequestData/ID=?
+    
+    change the ID every second always increasing
+    
+    Response:
+    
+    { "ID":Sequence 1 ..n
+     ,"Value":Random(1..100)
+     }
+
+Client
+    using requests lib read the URL every second/2 seconds in ID sequence
