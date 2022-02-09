@@ -17,6 +17,50 @@ x = {
 }
 y = json.dumps(x) #converted to JSON
 print(y)
+##################################################################
+Python	    JSON
+dict	    Object
+list	    Array
+tuple	    Array
+str	      String
+int	      Number
+float	    Number
+True	    true
+False	    false
+None	    null
+####################################################################
+You can convert Python objects of the following types, into JSON strings:
+
+dict
+list
+tuple
+string
+int
+float
+True
+False
+None
+########################################################################
+
+#Adding indentations and line breaks
+
+x = {
+  "name": "John",
+  "age": 30,
+  "address":"ADG123"
+}
+y = json.dumps(x, indent=3) #converted to JSON
+print(y)
+
+#######################################################################
+#Adding seperators
+json.dumps(x, indent=4, separators=(". ", " = "))
+######################################################################
+
+#Order the keys in the result
+json.dumps(x, indent=4, sort_keys=True)
+######################################################################
+
 
 
 
