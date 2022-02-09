@@ -19,15 +19,15 @@ y = json.dumps(x) #converted to JSON
 print(y)
 ##################################################################
 Python	    JSON
-dict	    Object
-list	    Array
-tuple	    Array
-str	      String
-int	      Number
-float	    Number
-True	    true
-False	    false
-None	    null
+dict	      Object
+list	      Array
+tuple	      Array
+str	        String
+int	        Number
+float	      Number
+True	      true
+False	      false
+None	      null
 ####################################################################
 You can convert Python objects of the following types, into JSON strings:
 
