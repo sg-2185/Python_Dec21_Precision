@@ -16,6 +16,7 @@ print(testString.splitlines())
 ##find()/index(): displays the position index of a given substring and its occurence number
 
 print('test'.find('t',2))
+print('test'.find('t',0,3))
 print('test'.index('t'))
 print('test'.find('z'))
 print('test'.rfind('z')) #rfind() prints the highest index and -1 when not found
@@ -61,6 +62,7 @@ print('test'.center(10,'+'))
 #Change to upper and lowercase
 s = "changethecase"
 print(s.capitalize())
+print(s.upper())
 print(s.lower())
 
 #Swapcase - change upper to lower and vice versa 
@@ -69,5 +71,16 @@ print(s.swapcase())
 
 #title - first letter of each word is converted to uppercase
 'the sun also rises'.title()
+
+#Find and replace - These methods provide various means of searching the target string for a specified substring
+
+s = 'see tee bee'
+print(s.count('ee',0,8))
+
+#Endswith - Determines whether the target string ends with a given substring.
+
+'foobar'.endswith('bar')
+
+
 
 
