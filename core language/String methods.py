@@ -51,5 +51,23 @@ print('test'.ljust(10,'+'))
 print('test'.rjust(10,'+'))
 print('test'.center(10,'+'))
 
+##################################
+#Built - in string methods
+##################################
+#A method is a specialized type of callable procedure that is tightly associated with an object. 
+#Like a function, a method is called to perform a distinct task, 
+#but it is invoked on a specific object and has knowledge of its target object during execution.
+
+#Change to upper and lowercase
+s = "changethecase"
+print(s.capitalize())
+print(s.lower())
+
+#Swapcase - change upper to lower and vice versa 
+s = "cHaNgEthecAse"
+print(s.swapcase())
+
+#title - first letter of each word is converted to uppercase
+'the sun also rises'.title()
 
 
